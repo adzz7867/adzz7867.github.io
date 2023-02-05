@@ -1,7 +1,13 @@
 img{
     max-width: 100%;
 }
-.fab-container{
+#top{
+  background-image: url(/assets/images/top-bg2.JPG);
+  min-width: 100%;
+  background-position-x: center ;
+  
+}
+.up-container{
     position: fixed;
     bottom: 25px;
     left: 25px;
@@ -19,7 +25,7 @@ img{
     width:50px;
     height:50px;
     border-radius:100%;
-    background: lightskyblue;
+    
     box-shadow:5px 5px 5px rgba(170, 170, 170, 0.616);
 
 }
@@ -34,7 +40,7 @@ img{
 display: flex;
 align-items: center;
 justify-content: center;
-color: aliceblue;
+
 
 }
 .experience{
@@ -74,7 +80,7 @@ color: aliceblue;
   /* Create four equal columns that sits next to each other */
   .gallery-column {
     flex: 25%;
-    max-width: 25%;
+    max-width: 20%;
     padding: 0 4px;
   }
   
@@ -83,9 +89,28 @@ color: aliceblue;
     vertical-align: middle;
     width: 100%;
   }
+
+.offcanvas a{
+ color: black;
+ border-radius: 10px;
+ 
+}
+.offcanvas li a:hover{
+  color: lightblue;
+}
+.offcanvas li{
+  margin-bottom: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
   
 
-
+}
+.contact img{
+  margin-right: 50px;
+}
+hr{
+  color: black;
+}
 
 
 
