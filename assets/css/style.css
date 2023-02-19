@@ -1,12 +1,33 @@
+body::-webkit-scrollbar{
+  display: none;
+}
 img{
     max-width: 100%;
 }
 #top{
   background-image: url(/assets/images/top-bg2.JPG);
-  min-width: 100%;
-  background-position-x: center ;
-  
+  background-position-x: center ; 
+  filter: brightness(90%);
 }
+#web-title {
+  text-decoration: underline;
+}
+#retail-title {
+  text-decoration: underline;
+}
+#culinary-title {
+  text-decoration: underline;
+}
+#qualification-title {
+  text-decoration: underline;
+}
+#extra-title {
+  text-decoration: underline;
+}
+#building-title {
+  text-decoration: underline;
+}
+
 .up-container{
     position: fixed;
     bottom: 25px;
@@ -25,8 +46,8 @@ img{
     width:50px;
     height:50px;
     border-radius:100%;
-    
     box-shadow:5px 5px 5px rgba(170, 170, 170, 0.616);
+    background-color: lightblue;
 
 }
 .button{
@@ -47,48 +68,48 @@ justify-content: center;
     background-color: lightblue;
 }
 .experience-modal{
-    
+  
     padding: 80px 0;
 }
 .experience-modal img{
     padding: 10px;
-    width: 100%;
+    min-width: 100%;
     box-shadow: 0 0 15px rgba(247, 247, 247, 0.5);
     cursor: pointer;
 }
 
 .about{
     background-color: lightblue;
-  
-   align-items: center;
 }
 
 .about-figure{
-    padding: 80px 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    
 }
 .about-figure img{
     padding: 5px;
     box-shadow: 0 0 15px rgba(247, 247, 247, 0.5);
     cursor: pointer;
+    padding: 0;
 }
-.gallery-row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
+.about-figure figcaption{
+  padding: 5px;
+  box-shadow: 0 0 15px rgba(247, 247, 247, 0.322);
+  cursor: pointer;
+  padding: 0;
+}
+.infinite-scroll::-webkit-scrollbar{
+ display: none;
+}
+
+#sidebar{ 
+  max-width: 80%;
   
-  /* Create four equal columns that sits next to each other */
-  .gallery-column {
-    flex: 25%;
-    max-width: 20%;
-    padding: 0 4px;
-  }
-  
-  .gallery-column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
+}
 
 .offcanvas a{
  color: black;
@@ -105,19 +126,22 @@ justify-content: center;
   
 
 }
+.offcanvas-body{ 
+max-width: 100%;
+
+
+} 
+.offcanvas-body::-webkit-scrollbar{
+  display: none;
+ }
+
 .contact img{
-  margin-right: 50px;
+padding-right: 20px;
+  
 }
 hr{
   color: black;
 }
-
-
-
-
-
-
-
 
 
 
