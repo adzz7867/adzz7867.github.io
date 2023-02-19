@@ -60,7 +60,7 @@ If this section grows too long, you may want to split it off into a separate fil
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+  - During the validation of the HTML the [W3C validator],(https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html) i encountered a list of small but tedious errors which i had corrected and validated to almost no errors, the reason i wasnt able to solve all the validation errors is becuase of time restraints and lack of resource and knowledge. Attached below is a file of the code before and after validation.
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
 - The [Results](https://github.com/adzz7867/AdnanBashir/blob/main/validated-code%20(2).odt)
