@@ -1,33 +1,48 @@
+
+
+/*--define the minimum viewport width-*/
+viewport{
+  min-width: 373px;
+}
+/*--hide the scrollbar-*/
 body::-webkit-scrollbar{
   display: none;
 }
+/*--allow images to only take up a maximumn of a combined width of 100%-*/
 img{
     max-width: 100%;
 }
+/*--adds a baxckground image with a center positioning on the page with a brightness of 90% to allow for better visibility of text--*/
 #top{
   background-image: url(/assets/images/top-bg2.JPG);
   background-position-x: center ; 
   filter: brightness(90%);
 }
+/*--underlines title for experiance modals-*/
 #web-title {
   text-decoration: underline;
 }
+/*--underlines title for experiance modals-*/
 #retail-title {
   text-decoration: underline;
 }
+/*--underlines title for experiance modals-*/
 #culinary-title {
   text-decoration: underline;
 }
+/*--underlines title for experiance modals-*/
 #qualification-title {
   text-decoration: underline;
 }
+/*--underlines title for experiance modals-*/
 #extra-title {
   text-decoration: underline;
 }
+/*--underlines title for experiance modals-*/
 #building-title {
   text-decoration: underline;
 }
-
+/*--gives the top button a fixed position on the bottom left of the screen, displays a cursor when hovered over by user-*/
 .up-container{
     position: fixed;
     bottom: 25px;
@@ -35,6 +50,7 @@ img{
     cursor:pointer;
     
 }
+/*--gives the sidebar button a fixed position on the top left of the screen, displays a cursor when hovered over by user-*/
 .side-container{
   position: fixed;
   top: 25px;
@@ -42,6 +58,7 @@ img{
   cursor:pointer;
   
 }
+/*--defines the parameters and sizing for the buttons above-*/
 .iconbutton{
     width:50px;
     height:50px;
@@ -50,13 +67,14 @@ img{
     background-color: lightblue;
 
 }
+/*--defines the parameters and sizing for the buttons above-*/
 .button{
     width:60px;
     height:60px;
     background: lightblue;
 }
 
-
+/*--defines the parameters and sizing for the buttons above-*/
 .iconbutton{
 display: flex;
 align-items: center;
@@ -64,24 +82,29 @@ justify-content: center;
 
 
 }
+/*sets the experiance modal bacground to lightblue*/
 .experience{
     background-color: lightblue;
 }
+/*sets a padding for modal to have padding of 20px on each side*/
 .experience-modal{
   
-    padding: 80px 0;
+    padding: 20px 20px;
 }
+/*sets the height and width to provide a consistent sizing of the images with a padding to give spacing for the box shadow to show when the users clicks or hovers over the experiance modal images*/
 .experience-modal img{
+    height: 250px;
+    width: 250px;
     padding: 10px;
     min-width: 100%;
     box-shadow: 0 0 15px rgba(247, 247, 247, 0.5);
     cursor: pointer;
 }
-
+/*sets the about section background color to lightblue*/
 .about{
     background-color: lightblue;
 }
-
+/*sets the explicit width and height to take up the full width and height of the screen, it sets the font size and style to an appropriate sizing. it also centers the text for each figure*/
 .about-figure{
     height: 100%;
     width: 100%;
@@ -90,55 +113,61 @@ justify-content: center;
     font-style: italic;
     
 }
+/*sets a border of highlight to emphasis the content and give the content a pointer when hovered over*/
 .about-figure img{
     padding: 5px;
     box-shadow: 0 0 15px rgba(247, 247, 247, 0.5);
     cursor: pointer;
     padding: 0;
 }
+/*/*sets a border of highlight to emphasis the content and give the content a pointer when hovered over*/*/
 .about-figure figcaption{
   padding: 5px;
   box-shadow: 0 0 15px rgba(247, 247, 247, 0.322);
   cursor: pointer;
   padding: 0;
 }
+/*gives the class scrollbar the attribute of displaying no scollbar*/
 .infinite-scroll::-webkit-scrollbar{
  display: none;
 }
-
+/*gives the sidebar navigation a max width of 80% to prevent overflow and allow for space on the screen for the user to see the background content and click off the sidebar */
 #sidebar{ 
   max-width: 80%;
   
 }
-
+/*sets the sidebar navigation a tag to the colour black and */
 .offcanvas a{
  color: black;
- border-radius: 10px;
+ border-radius: 20px;
  
 }
+/*sets the navigaton text to turn lightblue when hovered on */
 .offcanvas li a:hover{
   color: lightblue;
 }
+/*gives the sidebar navigation spacing underneath each navigation link*/
 .offcanvas li{
   margin-bottom: 20px;
-  margin-right: 5px;
-  margin-left: 5px;
-  
 
 }
+
+/*sets the content to fill 100% of the offcanvas body*/
 .offcanvas-body{ 
 max-width: 100%;
 
 
 } 
+/*sets the body scrollbar to hidden */
 .offcanvas-body::-webkit-scrollbar{
   display: none;
  }
-
+/*sets spacing between contact images to give spacing between the columns of images*/
 .contact img{
 padding-right: 20px;
   
 }
+/*gives spacing line between nav-bar and contact me section of the sidebar*/
 hr{
   color: black;
 }

@@ -2,433 +2,548 @@
 <html lang="en">
 
 <head>
-   <!--head start-->
-   <!--head meta data-->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!--head meta data-->
-   <title>Adnan Bashir Personal Portfolio</title>
+  <!--head start-->
+  <!--head meta data-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-   <link rel="stylesheet" href="/assets/css/style.css">
-   <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+  <!--head meta data-->
+  <title>Adnan Bashir Personal Portfolio</title>
+
+  <link rel="stylesheet" href="/assets/css/style.css"><!--refrence the local style sheet-->
+  <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css"><!--refrence the local bootsrap preloaded css files as stylesheet-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css"><!--refrence fontawesome website as stylesheet-->
+
 </head>
 <!--head end-->
 
 <body>
-   <!--body start-->
-   
-   <div class="up-container">
-      <div class="button iconbutton">
-         <button onclick="window.location.href='#top';" type="button" class="btn"><i class="fa-solid fa-arrow-up" alt="Back to the top">
-            </i></button>
+  <!--body start-->
+
+  <div class="up-container"><!--div to allow user to click button to navigate to the top of the page-->
+    <div class="button iconbutton"><!--div class defining the button with a class icon button for css styling-->
+      <button onclick="window.location.href='#top';" type="button" class="btn"><i class="fa-solid fa-arrow-up"
+          alt="Back to the top">
+        </i></button><!--adding the functionality to the button which allows it to navigate to the top div of the page when a onlclick event is triggered, an I tag is used to refrence the icon class in fontawesome-->
+    </div><!--button div end-->
+  </div><!--div end-->
+
+  <div class="navbar">
+    <!--navbar function start-->
+    <div class="side-container iconbutton" data-bs-toggle="offcanvas" role="button" href="#sidebar"
+      aria-controls="sidebar">
+      <!--navbar button attribute linked to offcanvas sidebar form-->
+      <i class="fa-sharp fa-solid fa-bars"></i>
+    </div>
+    <!--navbar intiating button-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar">
+      <!--offcanvas navbar start-->
+      <div class="offcanvas-header">
+        <!--navbar header start-->
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-   </div>
-
-   <div class="navbar">
-      <!--navbar function start-->
-      <div class="side-container iconbutton" data-bs-toggle="offcanvas" role="button" href="#sidebar"
-         aria-controls="sidebar">
-         <!--navbar button attribute linked to offcanvas sidebar form-->
-         <i class="fa-sharp fa-solid fa-bars"></i>
-      </div>
-      <!--navbar intiating button-->
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar">
-         <!--offcanvas navbar start-->
-         <div class="offcanvas-header">
-            <!--navbar header start-->
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-         </div>
-         <!--navbar closing button-->
-         <div class="offcanvas-body text-center">
-            <!--navbar body start-->
-            <img src="/assets/images/logo.jpeg" width="150" height="150" alt="logo">
-            <div>
-               <!--offcanvas navigation start-->
-               <ul class="list-unstyled px-2">
-                  <!--defining navigation list as unstyled to display without bullet points and padding to seperate the links for easier readability and usability-->
-                  <li><a href="#experience" class="text-decoration-none"><i
-                           class="fa-solid fa-book-open-reader"></i>Experience</a></li>
-                  <li><a href="#hobbies" class="text-decoration-none"><i class="fa-solid fa-basketball"></i>Hobbies</a>
-                  </li>
-                  <li><a href="#about" class="text-decoration-none"><i class="fa-solid fa-address-card"></i>About-Me</a>
-                  </li>
-                  <li><a href="#gallery" class="text-decoration-none"><i class="fa-solid fa-image"></i>Gallery</a></li>
+      <!--navbar closing button-->
+      <div class="offcanvas-body text-center">
+        <!--navbar body start-->
+        <img src="/assets/images/logo.jpeg" width="150" height="150" alt="logo">
+        <div>
+          <!--offcanvas navigation start-->
+          <ul class="offcanvas-nav list-unstyled px-2">
+            <!--defining navigation list as unstyled to display without bullet points and padding to seperate the links for easier readability and usability-->
+            <li><a href="#experience" class="text-decoration-none"><i
+                  class="fa-solid fa-book-open-reader"></i>Experience</a></li>
+            <li><a href="#hobbies" class="text-decoration-none"><i class="fa-solid fa-basketball"></i>Hobbies</a>
+            </li>
+            <li><a href="#about" class="text-decoration-none"><i class="fa-solid fa-address-card"></i>About-Me</a>
+            </li>
+            <li><a href="#gallery" class="text-decoration-none"><i class="fa-solid fa-image"></i>Gallery</a></li>
 
 
-               </ul>
-               <!--navigation list end-->
-               <hr>
-               <!--a spacer between navigation list and contact me section-->
-               <ul class="list-unstyled px-2 py-4">
-                  <!--contact me section start-->
-                  <li><a class="btn btn-outline-secondary " href="mailto:adzbash1@gmail.com" target="_blank"
-                        role="button">Contact Me</a></li>
-                  <!--contact me section mait:to button to allow for enquiries to be sent directly to my personal email->
+          </ul>
+          <!--navigation list end-->
+          <hr>
+          <!--a spacer between navigation list and contact me section-->
+          <ul class="list-unstyled px-2 py-4">
+            <!--contact me section start-->
+            <li><a class="btn btn-outline-secondary " href="mailto:adzbash1@gmail.com" target="_blank"
+                role="button">Contact Me</a></li>
+            <!--contact me section mait:to button to allow for enquiries to be sent directly to my personal email->
                </ul> <!-contact me section end-->
-                  <div class="contact d-flex justify-content-center">
-                     <!--socials start-linked to images for accessibilty and easier user interface -->
-                     <a href="https://uk.indeed.com/" target="_blank"><img src="/assets/images/indeed.png"
-                           style="height: 60px" width="70" alt="Indeed"></a>
-                     <a href="https://gb.linkedin.com/" target="_blank"><img src="/assets/images/linkedin.png"
-                           height="60" width="70" alt="LinkedIn"></a>
-                     <a href="https://discord.co.uk" target="_blank"><img src="/assets/images/discord.png" height="60"
-                           width="70" alt="Facebook"></a>
-                     <a href="https://www.instagram.com/" target="_blank"><img src="/assets/images/instagram.png"
-                           height="60" width="70" alt="Instagram"></a>
-                  </div>
-                  <!--socials end-->
+            <div class="contact d-flex justify-content-center">
+              <!--socials start-linked to images for accessibilty and easier user interface -->
+              <a href="https://uk.indeed.com/" target="_blank"><img src="/assets/images/indeed.png" style="height: 60px"
+                  width="70" alt="Indeed"></a>
+              <a href="https://gb.linkedin.com/" target="_blank"><img src="/assets/images/linkedin.png" height="60"
+                  width="70" alt="LinkedIn"></a>
+              <a href="https://discord.co.uk" target="_blank"><img src="/assets/images/discord.png" height="60"
+                  width="70" alt="Facebook"></a>
+              <a href="https://www.instagram.com/" target="_blank"><img src="/assets/images/instagram.png" height="60"
+                  width="70" alt="Instagram"></a>
             </div>
-            <!--offcanvas navigation end-->
-         </div>
-         <!--offcanvas body end -->
+            <!--socials end-->
+        </div>
+        <!--offcanvas navigation end-->
       </div>
-      <!--offcanvas navbar end-->
-   </div>
-   <!--navbar function end-->
+      <!--offcanvas body end -->
+    </div>
+    <!--offcanvas navbar end-->
+  </div>
+  <!--navbar function end-->
 
 
 
-   <div class="px-4 py-3  text-center" id="top">
-      <!--head/navigation start-->
-      <img class="d-block mx-auto mb-10" src="/assets/images/logo.jpeg" alt="Logo" width="150" height="150">
-      <!--logo for the website which has been given a specific height and width to stay consistent and responsive, the margin attribute applied is to ensure adequte spacing between the navigation button and the logo-->
-      <h1 class="display-4 fw-bold">Adnan Bashir</h1>
-      <!--website title and header-->
-      <div class="col-lg-6 mx-auto">
-         <!--small description for the premise of the website-->
-         <p class="lead mb-4">Welcome, here you are able to dive into my life experiances and discover more to me, from
-            past experiances to stories of how i have accumulated the vast knowledge that has shaped me into the man i
-            am
-            today.
-         </p>
-         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <!--navigation function/buttons start--styling applied to display consistently vertically-->
-            <button onclick="window.location.href='#experience';" type="button"
-               class="btn btn-outline-secondary btn-lg px-4 gap-3">Experience</button>
-            <button onclick="window.location.href='#hobbies';" type="button"
-               class="btn btn-outline-info btn-lg px-4">Hobbies</button>
-            <button onclick="window.location.href='#about';" type="button"
-               class="btn btn-outline-secondary btn-lg px-4 gap-3">About-Me</button>
-            <button onclick="window.location.href='#gallery';" type="button"
-               class="btn btn-outline-info btn-lg px-4 gap-3">Gallery</button>
+  <div class="px-4 py-3  text-center" id="top">
+    <!--head/navigation start-->
+    <img class="d-block mx-auto mb-10" src="/assets/images/logo.jpeg" alt="Logo" width="150" height="150">
+    <!--logo for the website which has been given a specific height and width to stay consistent and responsive, the margin attribute applied is to ensure adequte spacing between the navigation button and the logo-->
+    <h1 class="display-4 fw-bold">Adnan Bashir</h1>
+    <!--website title and header-->
+    <div class="col-lg-6 mx-auto">
+      <!--small description for the premise of the website-->
+      <p class="lead mb-4">Welcome, here you are able to dive into my life experiances and discover more to me, from
+        past experiances to stories of how i have accumulated the vast knowledge that has shaped me into the man i
+        am
+        today.
+      </p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <!--navigation function/buttons start--styling applied to display consistently vertically-->
+        <button onclick="window.location.href='#experience';" type="button"
+          class="btn btn-outline-secondary btn-lg px-4 gap-3">Experience</button>
+        <button onclick="window.location.href='#hobbies';" type="button"
+          class="btn btn-outline-info btn-lg px-4">Hobbies</button>
+        <button onclick="window.location.href='#about';" type="button"
+          class="btn btn-outline-secondary btn-lg px-4 gap-3">About-Me</button>
+        <button onclick="window.location.href='#gallery';" type="button"
+          class="btn btn-outline-info btn-lg px-4 gap-3">Gallery</button>
 
-         </div>
       </div>
-      <!--navigation function/buttons end-->
-   </div>
-   <!--head/navigation start-->
+    </div>
+    <!--navigation function/buttons end-->
+  </div>
+  <!--head/navigation start-->
 
-   <div class="experience text-center" id="experience">
-      <!--experiance section start defined with text-center to allign content -->
-      <div class="experience-modal">
-         <!--experiance modal start-->
-         <div class="container-lg">
-            <!--experiance modal container start defined as large to display large image icons on the website -->
-            <div class="row gy-2 row-cols-1 row-cols-sm-2 row-cols-md-3">
-               <!--experiance modal row start defining the row amount of 3 and column amount of 3 with indivdial breakpoints and column sizing for each column -->
-               <!--experiance modal columns start-->
-               <div class="col">
-                  <!--column defined as a button to target id for the modal to initiate and displayed as the specific image in the size previoulsy defined in the row class-->
-                  <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#web-modal">
-                     <img src="/assets/images/Modal1.avif" alt="Web-dev" class="modal-item"
-                        style="height: 330px; width: 330px;">
-                  </button></div>
-               <div class="col">
-                  <!--column defined as a button to target id for the modal to initiate and displayed as the specific image in the size previoulsy defined in the row class-->
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#retail-modal">
-                     <img src="/assets/images/modal2.png" alt="Web-dev" class="modal-item"
-                        style="height: 330px; width: 330px;">
-                  </button> </div>
-               <div class="col">
-                  <!--column defined as a button to target id for the modal to initiate and displayed as the specific image in the size previoulsy defined in the row class-->
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#culinary-modal">
-                     <img src="/assets/images/modal3.png" alt="Web-dev" class="modal-item"
-                        style="height: 330px; width: 330px;">
-                  </button> </div>
-               <div class=" col">
-                  <!--column defined as a button to target id for the modal to initiate and displayed as the specific image in the size previoulsy defined in the row class-->
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#qualification-modal">
-                     <img src="/assets/images/modal4.png" alt="Web-dev" class="modal-item"
-                        style="height: 330px; width: 330px;">
-                  </button> </div>
-               <div class="col">
-                  <!--column defined as a button to target id for the modal to initiate and displayed as the specific image in the size previoulsy defined in the row class-->
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#extra-curicular-modal">
-                     <img src="/assets/images/modal5.png" alt="Web-dev" class="modal-item"
-                        style="height: 330px; width: 330px;">
-                  </button> </div>
-               <div class="col">
-                  <!--column defined as a button to target id for the modal to initiate and displayed as the specific image in the size previoulsy defined in the row class-->
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#building-modal">
-                     <img src="/assets/images/modal6.png" alt="Web-dev" class="modal-item"
-                        style="height: 330px; width: 330px;">
-                  </button>
-               </div>
-               <!--experiance modal columns end-->
-            </div>
-            <!--experiance modal row end-->
-         </div>
-         <!--experiance modal container end-->
+  <div class="experience text-center" id="experience">
+    <!--experiance section start defined with text-center to allign content -->
+    <div class="experience-modal">
+      <!--experiance modal start-->
+      <div class="container-lg">
+        <!--experiance modal container start defined as large to display large image icons on the website -->
+        <div class="row gy-2 row-cols-1 row-cols-sm-2 row-cols-md-3">
+          <!--experiance modal row start defining the row amount of 3 and column amount of 3 with indivdial breakpoints and column sizing for each column -->
+          <!--experiance modal columns start-->
+          <div class="col">
+            <!--column defined as a button to target id for the modal to initiate and displayed as the specific image in the size previoulsy defined in the css-->
+            <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#web-modal">
+              <img src="/assets/images/Modal1.avif" alt="Web-dev" class="modal-item">
+            </button></div>
+          <div class="col">
+            <!--column defined as a button to target id for the modal to initiate and displayed as the specific image in the size previoulsy defined in the css-->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#retail-modal">
+              <img src="/assets/images/modal2.png" alt="Web-dev" class="modal-item">
+            </button> </div>
+          <div class="col">
+            <!--column defined as a button to target id for the modal to initiate and displayed as the specific image in the size previoulsy defined in the css-->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#culinary-modal">
+              <img src="/assets/images/modal3.png" alt="Web-dev" class="modal-item">
+            </button> </div>
+          <div class=" col">
+            <!--column defined as a button to target id for the modal to initiate and displayed as the specific image in the size previoulsy defined in the css-->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#qualification-modal">
+              <img src="/assets/images/modal4.png" alt="Web-dev" class="modal-item">
+            </button> </div>
+          <div class="col">
+            <!--column defined as a button to target id for the modal to initiate and displayed as the specific image in the size previoulsy defined in the css-->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#extra-curicular-modal">
+              <img src="/assets/images/modal5.png" alt="Web-dev" class="modal-item">
+            </button> </div>
+          <div class="col">
+            <!--column defined as a button to target id for the modal to initiate and displayed as the specific image in the size previoulsy defined in the css-->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#building-modal">
+              <img src="/assets/images/modal6.png" alt="Web-dev" class="modal-item">
+            </button>
+          </div>
+          <!--experiance modal columns end-->
+        </div>
+        <!--experiance modal row end-->
       </div>
-      <!--experiance modal end-->
-   </div>
-   <!--experiance modal section end-->
+      <!--experiance modal container end-->
+    </div>
+    <!--experiance modal end-->
+  </div>
+  <!--experiance modal section end-->
 
 
 
 
-   <div class="hobbies d-flex flex-column text-center mb-4" id="hobbies">
-      <div id="Slides" class="carousel slide " data-bs-ride="carousel">
-         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="5000">
-               <img src="/assets/images/Hobbies1.jpeg" alt="Web-dev">
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-               <img src="/assets/images/Hobbies2.png" alt="Astronomy">
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-               <img src="/assets/images/Hobbies3.png" alt="Photography">
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-               <img src="/assets/images/Hobbies4.png" alt="Basketball">
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-               <img src="/assets/images/Hobbies5.png" alt="Motorbike">
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-               <img src="/assets/images/Hobbies6.png" alt="Music">
-            </div>
-         </div>
-         <button class="carousel-control-prev" type="button" data-bs-target="#Slides" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-         </button>
-         <button class="carousel-control-next" type="button" data-bs-target="#Slides" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-         </button>
+  <div class="hobbies d-flex flex-column text-center mb-4" id="hobbies">
+    <!--hobbies section start-->
+    <div id="Slides" class="carousel slide " data-bs-ride="carousel">
+      <!--hobbies carousel start-->
+      <div class="carousel-inner">
+        <!--hobbies carousel images start-->
+        <div class="carousel-item active" data-bs-interval="5000">
+          <!--carousel-item class defining the image as active to be displayed first. the class with a given intervel of 5000ms-->
+          <img src="/assets/images/Hobbies1.jpeg" alt="Web-dev">
+          <!--img tag to source the image relevent to hobbies with the relevant and specified alt attribute-->
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <!--carousel item class with a given intervel of 5000ms-->
+          <img src="/assets/images/Hobbies2.png" alt="Astronomy">
+          <!--img tag to source the image relevent to hobbies with the relevant and specified alt attribute-->
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <!--carousel item class with a given intervel of 5000ms-->
+          <img src="/assets/images/Hobbies3.png" alt="Photography">
+          <!--img tag to source the image relevent to hobbies with the relevant and specified alt attribute-->
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <!--carousel item class with a given intervel of 5000ms-->
+          <img src="/assets/images/Hobbies4.png" alt="Basketball">
+          <!--img tag to source the image relevent to hobbies with the relevant and specified alt attribute-->
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <!--carousel item class with a given intervel of 5000ms-->
+          <img src="/assets/images/Hobbies5.png" alt="Motorbike">
+          <!--img tag to source the image relevent to hobbies with the relevant and specified alt attribute-->
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <!--carousel item class with a given intervel of 5000ms-->
+          <img src="/assets/images/Hobbies6.png" alt="Music">
+          <!--img tag to source the image relevent to hobbies with the relevant and specified alt attribute-->
+        </div>
       </div>
+      <!--hobbies carousel images end-->
+      <button class="carousel-control-prev" type="button" data-bs-target="#Slides" data-bs-slide="prev">
+        <!--control button allowing user to naviagte through the carousel images, this button allows users to view the previous slide. it has been defined as a previous button and to target the data id of the carousel images section-->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <!--span class giving it a aria-hidden attribute to hide the icon-->
+        <span class="visually-hidden">Previous</span>
+        <!--span class giving it the visually-hidden class to hide the text however it is stil defined forbest practice purposes-->
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#Slides" data-bs-slide="next">
+        <!--control button allowing user to naviagte through the carousel images, this button allows users to view the next slide. it has been defined as a next button and to target the data id of the carousel images section-->
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <!--span class giving it a aria-hidden attribute to hide the icon-->
+        <span class="visually-hidden">Next</span>
+        <!--span class giving it the visually-hidden class to hide the text however it is stil defined forbest practice purposes-->
+      </button>
+    </div>
+    <!--hobbies carousel end-->
 
-      <section class="hobbies bg-white" id="hobbies-item">
-         <div class="container">
-            <div class="hobbies-section-head">
-               <div class="col-12">
-                  <h4 class="hobbies-section-title mbr-fonts-style align-left mb-0 display-1 text-center">
-                     My Hobbies</h4>
-               </div>
-            </div>
-         </div>
-         <div class="row mt-4">
-            <div class="col-12 col-md-6 border-right ">
-               <div class="card-wrapper mb-4">
-                  <div class="card-box align-left">
-                     <h4 class="card-title mbr-fonts-style align-left display-5">Gaming
-                     </h4>
-                     <p class="mbr-text mbr-fonts-style mb-3 me-lg-5 display-7">
-                        Gaming has always been a fond hobby and passion of mine, discovering a new and scary world of
-                        the unknown which led me to discover my potential for imagination and creativity. Whilst i
-                        enjoy gaming i quite enjoy the experience and bonding moments between friends sharing the
-                        thrilling journey of surving a round of zombies.
-                     </p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-12 col-md-6">
-               <div class="card-wrapper margin-left mb-4">
-                  <div class="card-box align-left">
-                     <h4 class="card-title mbr-fonts-style align-left display-5">
-                        Astronomy
-                     </h4>
-                     <p class="mbr-text mbr-fonts-style mb-3 me-lg-5 display-7">
-                        Astronomy is a hobby of mine which started on the nightly walk to the gym and back, however
-                        grew into an obsession of mine. the captivating beauty of the glimering stars in the deep
-                        night sky grew my curiousity of the worlds beyond. However most days is a good escape and
-                        stress releiver.
-                     </p>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-6 top">
-               <div class="card-wrapper margin-left mb-4">
-                  <div class="card-box align-left">
-                     <h4 class="card-title mbr-fonts-style  display-5">
-                        Photography
-                     </h4>
-                     <p class="mbr-text mbr-fonts-style mb-3 me-lg-5 display-7">
-                        Along with stargazing and going on walks everday it became often when i'd encounter views and
-                        experiance memories in which i thought was worthy of taking a picture.Over time i learned the
-                        different techniques and specifications in the camera operating systems to optomize
-                        photographry during different times of the day by adjusting the ISO to control the amount of
-                        brightness the lens picks up. these skills allowed me to develop a hobby and a steady
-                        increase in my photographic capabilities.
-                     </p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-12 col-md-6 border-right col-lg-6">
-               <div class="card-wrapper mb-4">
-                  <div class="card-box align-left">
-                     <h4 class="card-title mbr-fonts-style  display-5">Basketball
-                     </h4>
-                     <p class="mbr-text mbr-fonts-style mb-3 me-lg-5 display-7">
-                        The un-imaginable start to my basketball hobby was an even more coincidental start to one of
-                        my long standing friendships. the love of basketball started from seeing my favourite team
-                        the GSW dominate in the NBA and my favourite player the 5,8 point guard bsteph curry inspired
-                        me too strive to be better and push my limits regardless of my height. the long grouling
-                        hours on the courts taught me the determination and disipline i needed to succed.
-                     </p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-12 col-md-6 border-right col-lg-6">
-               <div class="card-wrapper mb-4">
-                  <div class="card-box align-left">
-                     <h4 class="card-title mbr-fonts-style align-left display-5">Motorbike riding</h4>
-                     <p class="mbr-text mbr-fonts-style mb-3 me-lg-5 display-7">
-                        i have never rode a motorbike but i still have always been enticed by the free flowing and
-                        presice nature in which motorcycle riders use to defy speeds even cars cant go and take turns
-                        faster then a Formula 1 car. the freedom of letting the wind blow against you quickly turns
-                        into admiration of the secret brotherhood of fellow motorbike enthusuiasts.
-                     </p>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-12 col-md-6 border-right col-lg-6">
-               <div class="card-wrapper mb-4">
-                  <div class="card-box align-left">
-                     <h4 class="card-title mbr-fonts-style align-left display-5"> Music enthusiast
-                     </h4>
-                     <p class="mbr-text mbr-fonts-style mb-3 me-lg-5 display-7">
-                        Wilsts working on anything important i like to induldge myself in classical music, i have
-                        recently broadened my horizon to other musicians such as Camille Saint-Saens,Lacrimosa by
-                        Wolfgang Amadeus Mozart is a favourite composition of mine.my favourite pianist is yan
-                        tiersan his favourite piece of mine is Amelie.
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-
-
-
-   </div>
-
-   <div class="about d-flex bg-lightblue" id="about">
-      <div class="container bg-black">
-         <div class="about-section-head">
-            <div class="col-lg-12">
-               <h4 class="about-section-title display-2 text-center text-white mt-4 ">
-                  About Me</h4>
-            </div>
-         </div>
+    <section class="hobbies bg-white" id="hobbies-text">
+      <!--hobbies text section start-->
+      <div class="container">
+        <!--div with class container to seperate the head title from the text columns-->
+        <div class="hobbies-section-head">
+          <!--div for hobbies section head-->
+          <div class="col-12">
+            <!--div class to assign the head title with a span of 12 columns-->
+            <h4 class="hobbies-section-title mbr-fonts-style align-left mb-0 display-1 text-center">
+              <!--heading tag with the class to style the font and display size and to allign the text-->
+              My Hobbies</h4>
+          </div>
+        </div>
       </div>
-      <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3">
-         <div class="col">
-            <figure class="about-figure bg-white">
-               <img src="/assets/images/aboutme1.png" class="figure-img img-fluid" alt="friends.">
-               <figcaption class="figure-caption text-center text-black bg-white"> I have a small but well rounded
-                  freinship
-                  circle with
-                  people i would consider family. </figcaption>
-            </figure>
-         </div>
+      <!--cointainer end-->
+      <div class="row mt-4">
+        <!---div class defined as the row for columns-->
+        <div class="col-12 col-md-6">
+          <!--this div has a class to define the first column with the class attributes to give the column a span width of 12 and defines the column size medium (col-md-6) -->
+          <h4 class="card-title mbr-fonts-style align-left display-5">Gaming
+          </h4>
+          <!--displays the title for the columns content in heading 4 sizing, the class defines the use of the mbr(font-style) to apply a custom font to the content the display(5) gives it a bigger screen size-->
+          <p class="mbr-text mbr-fonts-style  me-lg-5 display-7">
+            Gaming has always been a fond hobby and passion of mine, discovering a new and scary world of
+            the unknown which led me to discover my potential for imagination and creativity. Whilst i
+            enjoy gaming i quite enjoy the experience and bonding moments between friends sharing the
+            thrilling journey of surving a round of zombies.
+          </p>
+          <!--column content using a p tag with the class for mbr(text, font-style) for styling and me-lg-5 to resize the content to a larger font size-->
+
+        </div>
+        <div class="col-12 col-md-6">
+          <!--this div has a class to define the second column with the class attributes to give the column a span width of 12 and defines the column size medium (col-md-6) -->
+
+          <h4 class="card-title mbr-fonts-style align-left display-5">
+            Astronomy
+          </h4>
+          <!--displays the title for the columns content in heading 4 sizing, the class defines the use of the mbr(font-style) to apply a custom font to the content the display(5) gives it a bigger screen size-->
+          <p class="mbr-text mbr-fonts-style me-lg-5 display-7">
+            Astronomy is a hobby of mine which started on the nightly walk to the gym and back, however
+            grew into an obsession of mine. the captivating beauty of the glimering stars in the deep
+            night sky grew my curiousity of the worlds beyond. However most days is a good escape and
+            stress releiver.
+          </p>
+          <!--column content using a p tag with the class for mbr(text, font-style) for styling and me-lg-5 to resize the content to a larger font size-->
 
 
-         <div class="col">
-            <figure class="about-figure bg-lightblue">
-               <img src="/assets/images/aboutme2.png" class="figure-img img-fluid rounded" alt="languages.">
-               <figcaption class="figure-caption text-center text-black ">I can understand and speak multiple languages.
-                  however i
-                  strive to learn more so that i may communicate with better with people from different countires.
-               </figcaption>
-            </figure>
-         </div>
+        </div>
 
-         <div class="col">
-            <figure class="about-figure bg-black">
-               <img src="/assets/images/aboutme3.png" class="figure-img img-fluid rounded" alt="expaditions">
-               <figcaption class="figure-caption text-center text-white bg-black">I have climbed the Atlas mountains in
-                  north
-                  africa and
-                  experianced cuisine of local morrocan tajeen in a remote moutain village.</figcaption>
-            </figure>
-         </div>
+        <div class="col-12 col-md-6">
+          <!--this div has a class to define the first column with the class attributes to give the column a span width of 12 and defines the column size medium (col-md-6) -->
 
-         <div class="col">
-            <figure class="about-figure bg-lightblue">
-               <img src="/assets/images/aboutme4.png" class="figure-img img-fluid rounded" alt="volunteering">
-               <figcaption class="figure-caption text-center text-black">I like to volunteer and have recently braved
-                  the Shave to
-                  donate and raise awareness to cancer research for macmillan.</figcaption>
-            </figure>
-         </div>
+          <h4 class="card-title mbr-fonts-style  display-5">
+            Photography
+          </h4>
+          <!--displays the title for the columns content in heading 4 sizing, the class defines the use of the mbr(font-style) to apply a custom font to the content the display(5) gives it a bigger screen size-->
+          <p class="mbr-text mbr-fonts-style me-lg-5 display-7">
+            Along with stargazing and going on walks everday it became often when i'd encounter views and
+            experiance memories in which i thought was worthy of taking a picture.Over time i learned the
+            different techniques and specifications in the camera operating systems to optomize
+            photographry during different times of the day by adjusting the ISO to control the amount of
+            brightness the lens picks up. these skills allowed me to develop a hobby and a steady
+            increase in my photographic capabilities.
+          </p>
+          <!--column content using a p tag with the class for mbr(text, font-style) for styling and me-lg-5 to resize the content to a larger font size-->
+
+
+        </div>
+        <div class="col-12 col-md-6">
+          <!--this div has a class to define the first column with the class attributes to give the column a span width of 12 and defines the column size medium (col-md-6) -->
+
+          <h4 class="card-title mbr-fonts-style  display-5">Basketball
+          </h4>
+          <!--displays the title for the columns content in heading 4 sizing, the class defines the use of the mbr(font-style) to apply a custom font to the content the display(5) gives it a bigger screen size-->
+          <p class="mbr-text mbr-fonts-style me-lg-5 display-7">
+            The un-imaginable start to my basketball hobby was an even more coincidental start to one of
+            my long standing friendships. the love of basketball started from seeing my favourite team
+            the GSW dominate in the NBA and my favourite player the 5,8 point guard bsteph curry inspired
+            me too strive to be better and push my limits regardless of my height. the long grouling
+            hours on the courts taught me the determination and disipline i needed to succed.
+          </p>
+          <!--column content using a p tag with the class for mbr(text, font-style) for styling and me-lg-5 to resize the content to a larger font size-->
+
+
+        </div>
+        <div class="col-12 col-md-6 ">
+          <!--this div has a class to define the first column with the class attributes to give the column a span width of 12 and defines the column size medium (col-md-6) -->
+
+          <h4 class="card-title mbr-fonts-style align-left display-5">Motorbike riding</h4>
+          <!--displays the title for the columns content in heading 4 sizing, the class defines the use of the mbr(font-style) to apply a custom font to the content the display(5) gives it a bigger screen size-->
+          <p class="mbr-text mbr-fonts-style me-lg-5 display-7">
+            i have never rode a motorbike but i still have always been enticed by the free flowing and
+            presice nature in which motorcycle riders use to defy speeds even cars cant go and take turns
+            faster then a Formula 1 car. the freedom of letting the wind blow against you quickly turns
+            into admiration of the secret brotherhood of fellow motorbike enthusuiasts.
+          </p>
+          <!--column content using a p tag with the class for mbr(text, font-style) for styling and me-lg-5 to resize the content to a larger font size-->
+
+        </div>
+
+
+        <div class="col-12 col-md-6">
+          <!--this div has a class to define the first column with the class attributes to give the column a span width of 12 and defines the column size medium (col-md-6) -->
+          <h4 class="card-title mbr-fonts-style align-left display-5"> Music enthusiast
+          </h4>
+          <!--displays the title for the columns content in heading 4 sizing, the class defines the use of the mbr(font-style) to apply a custom font to the content the display(5) gives it a bigger screen size-->
+          <p class="mbr-text mbr-fonts-style me-lg-5 display-7">
+            Whilst working on anything important, i like to induldge myself in classical music, i have
+            recently broadened my horizon to other musicians such as Camille Saint-Saens,Lacrimosa by
+            Wolfgang Amadeus Mozart is a favourite composition of mine.my favourite pianist is yan
+            tiersan his favourite piece of mine is Amelie.
+          </p>
+          <!--column content using a p tag with the class for mbr(text, font-style) for styling and me-lg-5 to resize the content to a larger font size-->
+
+        </div>
+
       </div>
-   </div>
+  </div>
+  </section>
+  <!--hobbies text section end-->
 
-   <section class="w-100 p-4 d-flex pb-4 bg-black">
-      <div class="infinite-scroll py-4 text-center" id="gallery"
-         style="max-height: 800px; overflow-y: scroll">
-         <div id="gallery-images max-width: 70%">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery1.JPG">
-            <img class=" img-fluid mb-3" src="/assets/images/Gallery2.JPEG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery3.JPEG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery4.JPEG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery5.JPG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery6.JPEG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery7.JPEG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery8.JPEG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery9.JPEG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery10.JPEG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery11.JPEG">
-            <img class=" img-fluid mb-3" src="/assets/images/Gallery12.JPG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery13.JPG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery14.JPG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery15.JPEG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery16.JPEG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery17.JPEG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery18.JPEG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery19.JPEG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery20.JPEG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery21.JPEG">
-            <img class=" img-fluid mb-3" src="/assets/images/Gallery22.JPG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery23.JPEG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery24.JPEG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery25.JPEG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery26.JPG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery27.JPG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery28.JPG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery29.JPEG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery30.JPG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery31.JPG">
-            <img class=" img-fluid mb-3" src="/assets/images/Gallery32.JPG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery33.JPG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery34.JPG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery35.JPEG">
-            <img class="img-fluid mb-3" src="/assets/images/Gallery36.JPEG">
-         </div>
-         <div class="spinner-border mx-auto" id="spinner" style="display: none;"></div>
+
+
+  </div>
+  <!--hobbies section end-->
+
+  <div class="about d-flex bg-lightblue" id="about">
+    <!--about me section start, defined with lightblue background (bg-lightblue) and given the display flex attribute-->
+    <div class="container bg-black">
+      <!--cointainer for the vertically displayed about me title-->
+      <div class="about-section-head">
+        <!--defines section head-->
+        <div class="col-lg-12">
+          <!--gives columns a lg breakpoint and a span of the full 12 columns-->
+          <h4 class="about-section-title display-2 text-center text-white mt-4 ">
+            About Me</h4>
+          <!--heading tag to define sizing to the heading for each individual hobbies title, defined to text(text-white, text-center) to allow for easier user readability whilst also being given the correct text sizing for heading(display-2)-->
+        </div>
+        <!--column end-->
       </div>
-   </section>
+      <!--section head end-->
+    </div>
+    <!--container end-->
+    <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-4">
+      <!--defines the row to allow for content to be centered, defined the amount of coloumns to be displayed depending on screen size to allow for the coloumns to be responsive -->
+      <div class="col">
+        <!--first column-->
+        <figure class="about-figure bg-white">
+          <!--figure tag defined with a white background(bg-white)-->
+          <img src="/assets/images/aboutme1.png" class="figure-img img-fluid" alt="friends.">
+          <!--img tag with class defined as figure image with a fluid img attribute making it adjust to differernt viewport sizes-->
+          <figcaption class="figure-caption text-center text-black bg-white"> I have a small but well rounded
+            freinship
+            circle with
+            people i would consider family. </figcaption>
+        </figure>
+        <!--figcaption -->
+      </div>
+      <!--first column end-->
+
+
+      <div class="col">
+        <!--second column-->
+        <figure class="about-figure bg-lightblue">
+          <!--figure tag defined with a lightblue background(bg-lightblue)-->
+          <img src="/assets/images/aboutme2.png" class="figure-img img-fluid rounded" alt="languages.">
+          <!--img tag with class defined as figure image with a fluid img attribute making it adjust to differernt viewport sizes-->
+          <figcaption class="figure-caption text-center text-black ">I can understand and speak multiple languages.
+            however i
+            strive to learn more so that i may communicate with better with people from different countires.
+          </figcaption>
+          <!--figcaption -->
+        </figure>
+        <!--figcaption -->
+      </div>
+      <!--second column end-->
+
+      <div class="col">
+        <!--third column-->
+        <figure class="about-figure bg-black">
+          <!--figure tag deined with a black background(bg-black)-->
+          <img src="/assets/images/aboutme3.png" class="figure-img img-fluid rounded" alt="expaditions">
+          <!--img tag with class defined as figure image with a fluid img attribute making it adjust to differernt viewport sizes-->
+          <figcaption class="figure-caption text-center text-white bg-black">I have climbed the Atlas mountains in
+            north
+            africa and
+            experianced cuisine of local morrocan tajeen in a remote moutain village.</figcaption>
+        </figure>
+        <!--figcaption -->
+      </div>
+      <!--third column end-->
+
+      <div class="col">
+        <!--fourth column-->
+        <figure class="about-figure bg-lightblue">
+          <!--figure tag deined with a lightblue background(bg-lightblue)-->
+          <img src="/assets/images/aboutme4.png" class="figure-img img-fluid rounded" alt="volunteering">
+          <!--img tag with class defined as figure image with a fluid img attribute making it adjust to differernt viewport sizes-->
+          <figcaption class="figure-caption text-center text-black">I like to volunteer and have recently braved
+            the Shave to
+            donate and raise awareness to cancer research for macmillan.</figcaption>
+        </figure>
+        <!--figcaption -->
+      </div>
+      <!--fourth column end-->
+    </div>
+    <!--row end-->
+  </div>
+  <!--about me section end-->
+
+  <section class="w-100 p-4 d-flex pb-4 bg-black" id="gallery">
+    <!--gallery section start-->
+    <div class="infinite-scroll py-4 text-center" style="max-height: 800px; overflow-y: scroll">
+      <!--this div defines the infinate-scroll class and gives the attribute of overflow-y:scroll to allow users to scroll throught the gallery independently in a fixed container-->
+      <div id="gallery-images max-width: 70%">
+        <!--start of gallery images with a max-width(70) to allow for proportionate sizing to the background-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery1.JPG">
+        <!--gallery image-->
+        <img class=" img-fluid mb-3" src="/assets/images/Gallery2.JPEG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery3.JPEG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery4.JPEG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery5.JPG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery6.JPEG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery7.JPEG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery8.JPEG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery9.JPEG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery10.JPEG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery11.JPEG">
+        <!--gallery image-->
+        <img class=" img-fluid mb-3" src="/assets/images/Gallery12.JPG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery13.JPG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery14.JPG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery15.JPEG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery16.JPEG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery17.JPEG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery18.JPEG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery19.JPEG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery20.JPEG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery21.JPEG">
+        <!--gallery image-->
+        <img class=" img-fluid mb-3" src="/assets/images/Gallery22.JPG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery23.JPEG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery24.JPEG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery25.JPEG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery26.JPG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery27.JPG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery28.JPG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery29.JPEG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery30.JPG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery31.JPG">
+        <!--gallery image-->
+        <img class=" img-fluid mb-3" src="/assets/images/Gallery32.JPG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery33.JPG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery34.JPG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery35.JPEG">
+        <!--gallery image-->
+        <img class="img-fluid mb-3" src="/assets/images/Gallery36.JPEG">
+        <!--gallery image-->
+      </div>
+      <!--gallery div end-->
+      <div class="spinner-border mx-auto" id="spinner" style="display: none;"></div>
+    </div>
+  </section>
+  <!--gallery section end-->
 
 
 
-   <footer class="py-3 bg-black">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="#experience" class="nav-link px-2 text-muted">Experience</a></li>
-        <li class="nav-item"><a href="#hobbies" class="nav-link px-2 text-muted">Hobbies</a></li>
-        <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">About-Me</a></li>
-        <li class="nav-item"><a href="#gallery" class="nav-link px-2 text-muted">Gallery</a></li>
-        
-      </ul>
-      <p class="text-center text-muted">© 2023 Adnan Bashir Inc,</p>
-    </footer>
+  <footer class="py-3 bg-black">
+    <!--footer start-->
+    <!--footer nav start-->
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#experience" class="nav-link px-2 text-muted">Experience</a></li>
+      <li class="nav-item"><a href="#hobbies" class="nav-link px-2 text-muted">Hobbies</a></li>
+      <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">About-Me</a></li>
+      <li class="nav-item"><a href="#gallery" class="nav-link px-2 text-muted">Gallery</a></li>
+
+    </ul>
+    <!--footer navigation end-->
+    <p class="text-center text-muted">© 2023 Adnan Bashir Inc,</p><!--footer copyright text-->
+  </footer>
+  <!--footer end-->
 
 
 
@@ -436,343 +551,343 @@
 
 
 
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
-   </script>
-   <script src="assets/js/bootstrap.min.js"></script>
-   <script src="https://kit.fontawesome.com/1bc2d86df0.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
+  </script><!--popper script code-->
+  <script src="assets/js/bootstrap.min.js"></script><!--javascript script code file-->
+  <script src="https://kit.fontawesome.com/1bc2d86df0.js" crossorigin="anonymous"></script><!--fontawesome icon script link-->
 
 </body>
 <!--body end-->
 
 
-<!--Modals-->
+<!--Modals start-->
 
 <div class="modal fade" id="web-modal" tabindex="-1" aria-labelledby="web-modal" aria-hidden="true">
-   <div class="modal-dialog modal-lg justify-content-sm-center modal-dialog-scrollable">
-      <div class="modal-content">
-         <div class="modal-header">
-            <h5 class="web-title" id="web-title">Website Development experience</h5>
-            <button type="button" class="btn.close" data-bs-dismiss="modal" aria-label="Close"></button>
-         </div>
-         <div class="modal-body text-center">
-            <img src="/assets/images/Modal1.avif" style="height: 330px; width: 330px;" alt="web-modal">
-            <h4> Developer / Teacher Nov 2017 – July 2018</h4>
-            <h5>Digilab Tooting 89 Bickersteth Rd, London SW17 9SH</h5>
-            <p><i>During my college education in the pursuit of acquiring a level 3 extended diploma in ict, i had to
-                  complete a mandatory week of work experiance. Whilst searching for such work experiance i stumbled
-                  across the only web development work placement out of the long list of different job varieties. I
-                  took
-                  my chances and rather then spending the week as a cashier or libary assistant i gladly decided to
-                  go
-                  for it! . I was honestly not expecting much however i was abruptly proven wrong the experiance,
-                  knowledge,friends and lessons i have learnt from the nine months i spent there which greatly
-                  influenced
-                  and impacted and sparked the passion i have for coding and programming, this could be considered
-                  the
-                  birth of my web develpoment career. Before i had taken the course i had already been intresting in
-                  programming software and building hardware like pcs. However my mind was quickly changed in the
-                  first
-                  day of going, i was blown away at how the websites i have been seeing my whole life are made and i
-                  was
-                  there learning to do it myself. Througout the week i was taught taught the basics of html and css
-                  and
-                  immediatly my intrest had peaked, even though html is easy i was fascinated by the endless
-                  possabilites of what i could with this new found <strong>superpower! </strong>. My young and
-                  creative
-                  mind became extatic and wild with curiosity and working alongside all my other classmates who
-                  <strong>obviously</strong> decided to do this work placement rather then the other ones aswell
-                  helped
-                  support and excel my growth and learning. After a week of hard work and frustration i had completed
-                  the work placement, but for me it wast the end to my journey with Digilab. i was offered to stay on
-                  as
-                  a web developer helping create websites for cleints using my basic knowledge and tools like
-                  wordpress
-                  whilst also teaching what i had recently learnt to the younger generation programmers and web
-                  developers. During this experiance the skills i learnt and had to use were:</i> </p>
-            <ul class="list-unstyled">
-               <li>• Meet with and understand requirements of the client.</li>
-               <li>• Being able to organise and work in a co-ordinated manner with colleagues on a project and be
-                  able to communicate and complete the project to a high standard.</li>
-               <li> • Being able to explain to and teach children of all ages about web development and
-                  strengthening their knowledge of it</li>
-               <li> • Organising and planning lessons</li>
-               <li>• Being versatile and knowledgeable in order to make the website to the exact specification in
-                  which the client requires.</li>
-               <li> • Been able to communicate to colleagues and students if they need assistance and work in a
-                  group to solve the problem.</li>
-
-            </ul>
-
-            <h4>Full stack Web Developer Bootcamp December 2022 – April 2023</h4>
-            <h5> Amberley Road London W9 2JJ</h5>
-            <p>After a long drought of what seemed to be like forever since i had touched web develpoment came an
-               oppertunity which really was a once in a genration, The government was subsidicing courses left and
-               right and whilst there was plenty to choose from the unique experiance i had whilst taking the code
-               institute full stack web development course was inspiring, being around individuals that shared the
-               same interest and a comradary which i could not have found anywhere else. the feeling of a productive
-               and vibrant enviroment was the perfect breeding ground for creative minds to thrive. i can say with
-               confindence i thrived not only because of my individual intelect, but the combined harmonization of
-               knowledge to atttribute towards a goal, learning or re-learning some of theese
-               languages was a struggle and a <strong>headache</strong> at times however, when times were rough you
-               could always count on your mentor and colleagues. i had tough times however i can say this course has
-               greatly benifited me and was worth the tough times. Some skills i had to impliment when taking this
-               course was:</p>
-            <ul class="list-unstyled">
-               <li>•understand requirements of the course and complete the designated task.</li>
-               <li> • Being able to organise my time and work in a co-ordinated manner with my tutor on a project and
-                  be
-                  able to communicate and complete the project to a satisfactory standard.</li>
-               <li>• Being able to explain the knowledge aquired and convey the understanding of the knowledge i have
-                  gained by creating a website with the given django language
-                  specification(html,css,javascript,bootstrap 5)</li>
-               <li>• practicing versatility and being knowledgeable to make the website to the highest standard in
-                  which
-                  the website would meet the requirments of the specification.</li>
-               <li>• communicate to colleagues or tutor and work together to quickly and efficiently resolve any
-                  queries
-                  and troubleshoot issues.</li>
-            </ul>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
-         </div>
+  <div class="modal-dialog modal-lg justify-content-sm-center modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="web-title" id="web-title">Website Development experience</h5>
+        <button type="button" class="btn.close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-   </div>
+      <div class="modal-body text-center">
+        <img src="/assets/images/Modal1.avif" style="height: 330px; width: 330px;" alt="web-modal">
+        <h4> Developer / Teacher Nov 2017 – July 2018</h4>
+        <h5>Digilab Tooting 89 Bickersteth Rd, London SW17 9SH</h5>
+        <p><i>During my college education in the pursuit of acquiring a level 3 extended diploma in ict, i had to
+            complete a mandatory week of work experiance. Whilst searching for such work experiance i stumbled
+            across the only web development work placement out of the long list of different job varieties. I
+            took
+            my chances and rather then spending the week as a cashier or libary assistant i gladly decided to
+            go
+            for it! . I was honestly not expecting much however i was abruptly proven wrong the experiance,
+            knowledge,friends and lessons i have learnt from the nine months i spent there which greatly
+            influenced
+            and impacted and sparked the passion i have for coding and programming, this could be considered
+            the
+            birth of my web develpoment career. Before i had taken the course i had already been intresting in
+            programming software and building hardware like pcs. However my mind was quickly changed in the
+            first
+            day of going, i was blown away at how the websites i have been seeing my whole life are made and i
+            was
+            there learning to do it myself. Througout the week i was taught taught the basics of html and css
+            and
+            immediatly my intrest had peaked, even though html is easy i was fascinated by the endless
+            possabilites of what i could with this new found <strong>superpower! </strong>. My young and
+            creative
+            mind became extatic and wild with curiosity and working alongside all my other classmates who
+            <strong>obviously</strong> decided to do this work placement rather then the other ones aswell
+            helped
+            support and excel my growth and learning. After a week of hard work and frustration i had completed
+            the work placement, but for me it wast the end to my journey with Digilab. i was offered to stay on
+            as
+            a web developer helping create websites for cleints using my basic knowledge and tools like
+            wordpress
+            whilst also teaching what i had recently learnt to the younger generation programmers and web
+            developers. During this experiance the skills i learnt and had to use were:</i> </p>
+        <ul class="list-unstyled">
+          <li>• Meet with and understand requirements of the client.</li>
+          <li>• Being able to organise and work in a co-ordinated manner with colleagues on a project and be
+            able to communicate and complete the project to a high standard.</li>
+          <li> • Being able to explain to and teach children of all ages about web development and
+            strengthening their knowledge of it</li>
+          <li> • Organising and planning lessons</li>
+          <li>• Being versatile and knowledgeable in order to make the website to the exact specification in
+            which the client requires.</li>
+          <li> • Been able to communicate to colleagues and students if they need assistance and work in a
+            group to solve the problem.</li>
+
+        </ul>
+
+        <h4>Full stack Web Developer Bootcamp December 2022 – April 2023</h4>
+        <h5> Amberley Road London W9 2JJ</h5>
+        <p>After a long drought of what seemed to be like forever since i had touched web develpoment came an
+          oppertunity which really was a once in a genration, The government was subsidicing courses left and
+          right and whilst there was plenty to choose from the unique experiance i had whilst taking the code
+          institute full stack web development course was inspiring, being around individuals that shared the
+          same interest and a comradary which i could not have found anywhere else. the feeling of a productive
+          and vibrant enviroment was the perfect breeding ground for creative minds to thrive. i can say with
+          confindence i thrived not only because of my individual intelect, but the combined harmonization of
+          knowledge to atttribute towards a goal, learning or re-learning some of theese
+          languages was a struggle and a <strong>headache</strong> at times however, when times were rough you
+          could always count on your mentor and colleagues. i had tough times however i can say this course has
+          greatly benifited me and was worth the tough times. Some skills i had to impliment when taking this
+          course was:</p>
+        <ul class="list-unstyled">
+          <li>•understand requirements of the course and complete the designated task.</li>
+          <li> • Being able to organise my time and work in a co-ordinated manner with my tutor on a project and
+            be
+            able to communicate and complete the project to a satisfactory standard.</li>
+          <li>• Being able to explain the knowledge aquired and convey the understanding of the knowledge i have
+            gained by creating a website with the given django language
+            specification(html,css,javascript,bootstrap 5)</li>
+          <li>• practicing versatility and being knowledgeable to make the website to the highest standard in
+            which
+            the website would meet the requirments of the specification.</li>
+          <li>• communicate to colleagues or tutor and work together to quickly and efficiently resolve any
+            queries
+            and troubleshoot issues.</li>
+        </ul>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="modal fade" id="retail-modal" tabindex="-1" aria-labelledby="retail-modal" aria-hidden="true">
-   <div class="modal-dialog modal-lg justify-content-sm-center modal-dialog-scrollable">
-      <div class="modal-content">
-         <div class="modal-header">
-            <h5 class="retail-title" id="retail-title">Retail ¦ Customer service experience</h5>
-            <button type="button" class="btn.close" data-bs-dismiss="modal" aria-label="Close"></button>
-         </div>
-         <div class="modal-body text-center">
-            <img src="/assets/images/modal2.png" style="height: 330px; width: 330px;" alt="retail-modal">
-            <h4>Sales Assistant Nov 2018 – July 2019</h4>
-            <h5> Waitrose Balham 134-152 Balham High Rd, Balham, London SW12 9BN</h5>
-
-
-            <i>
-               My first real experience of customer service was my as a retail assistant at waitrose balham. at a
-               time when i was in my prime teenage years i was introduced to different people at different ages
-               and
-               thrown into a mountain of work which actually made me learn a valuable lesson on managing time and
-               being able to the pressure of customer service,therfore i learned to take a calm approach to
-               situations and de-escalate. the differences in age groups was eye opening as i got to hear and
-               learn
-               from other peoples experiances, especially when dealing with conflict. through the duratrion of my
-               employment i also had the oppertunity to learn the logistics side of the retail supermarket
-               buisness
-               which gave me an insight to how things are done and Organised via computer systems which further
-               sparked my intrest in coding and programming. some of the key skills implimented were:</i>
-            <ul class="list-unstyled">
-               <li> • Communicate effectively with colleagues and managers to provide service to customers</li>
-               <li> • Manage time effectively to complete tasks given by my managers.</li>
-               <li> • Attain a comprehensive knowledge of store products allowing for better customer service</li>
-               <li> • Organising and being punctual in my shifts and time management</li>
-               <li>• Work with operations team on stock control and management.</li>
-               <li>• Experience in customer service and solving customer issue</li>
-            </ul>
-
-
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
-         </div>
+  <div class="modal-dialog modal-lg justify-content-sm-center modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="retail-title" id="retail-title">Retail ¦ Customer service experience</h5>
+        <button type="button" class="btn.close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-   </div>
+      <div class="modal-body text-center">
+        <img src="/assets/images/modal2.png" style="height: 330px; width: 330px;" alt="retail-modal">
+        <h4>Sales Assistant Nov 2018 – July 2019</h4>
+        <h5> Waitrose Balham 134-152 Balham High Rd, Balham, London SW12 9BN</h5>
+
+
+        <i>
+          My first real experience of customer service was my as a retail assistant at waitrose balham. at a
+          time when i was in my prime teenage years i was introduced to different people at different ages
+          and
+          thrown into a mountain of work which actually made me learn a valuable lesson on managing time and
+          being able to the pressure of customer service,therfore i learned to take a calm approach to
+          situations and de-escalate. the differences in age groups was eye opening as i got to hear and
+          learn
+          from other peoples experiances, especially when dealing with conflict. through the duratrion of my
+          employment i also had the oppertunity to learn the logistics side of the retail supermarket
+          buisness
+          which gave me an insight to how things are done and Organised via computer systems which further
+          sparked my intrest in coding and programming. some of the key skills implimented were:</i>
+        <ul class="list-unstyled">
+          <li> • Communicate effectively with colleagues and managers to provide service to customers</li>
+          <li> • Manage time effectively to complete tasks given by my managers.</li>
+          <li> • Attain a comprehensive knowledge of store products allowing for better customer service</li>
+          <li> • Organising and being punctual in my shifts and time management</li>
+          <li>• Work with operations team on stock control and management.</li>
+          <li>• Experience in customer service and solving customer issue</li>
+        </ul>
+
+
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="modal fade" id="culinary-modal" tabindex="-1" aria-labelledby="culinary-modal" aria-hidden="true">
-   <div class="modal-dialog modal-lg justify-content-sm-center modal-dialog-scrollable">
-      <div class="modal-content">
-         <div class="modal-header">
-            <h5 class="culinary-title" id="culinary-title">Culinary experience</h5>
-            <button type="button" class="btn.close" data-bs-dismiss="modal" aria-label="Close"></button>
-         </div>
-         <div class="modal-body text-center">
-            <img src="/assets/images/modal3.png" style="height: 330px; width: 330px;" alt="culinary-modal">
-            <h4>Chef Sept 2016 – July 2017</h4>
-            <h5>Ernest Bevin Restaurant Beechcroft Rd, Tooting, London SW17
-               7DF</h5>
-
-            <i> Growing up i became entruiged by cooking from my family and during my secondary school days i had
-               the
-               oppertunity to work with a bunch of fellow culinary enthusiasts in my year group and with the
-               steady
-               guidence of our vice principal at the time formed a cooking club/resturant which would server
-               dinner
-               to teachers who would be staying late, once a week we would prepare a different three course meal
-               accordingly to the appropriate seasons and
-               all proceeds went back into the resturant to fund for the next weeks dinner course, throughout the
-               year the resturant worked well and i was learning new techniques and dishes every week and during
-               the
-               experiance we had the oppertunity to cook a buffet for over 100 people and whilst it was a long
-               hard
-               days of work some of the skills i used to overcome this was:</i>
-            <ul class="class list-unstyled">
-               <li>• Check the quality of the product and make sure that it meets the standards for consumer use
-               </li>
-               <li>• Determine how food should be presented and arranging decorative food displays</li>
-               <li>• Communication with fellow peers and the importance of time management, gaining a great
-                  deal of discipline being a trainee chef</li>
-               <li>• Part of the catering team at an event which the Mayor of London Sadiq Khan attended and
-                  tried all the dishes our team prepared</li>
-            </ul>
-
-
-            <h4>Kitchen assistant Feb 2020 – June 2020</h4>
-            <h5>TGI Fridays</h5>
-
-
-            <i>in the heart of the pandemic whilst studying i started employment as a kitchen assistant(line
-               chef)
-               at TGI Fridays Wembley. it was a short employment however i ganined vital experiance with
-               running a
-               station, the time managment and repetitive consistency that i was subjected to made me a more
-               efficient and analytical thinker. alongside making good memories with the other people working
-               there i learnt many important skills that helped develop me into a more confident and assertive
-               person, i had taken the skills i learnt in the kitchen and applied them to my life. this helped
-               me
-               realize the strong points and weaknesses and improve on them. i recieved valuable knowledge and
-               insights to the workings of a professional kitchen to the industry health standards such as:</i>
-            <ul class="list-unstyled">
-               <li>• Check the quality of the product and make sure that it meets the standards for consumer use
-               </li>
-               <li>• Determine how food should be presented and decorative food displays</li>
-               <li> • Communication with fellow peers and gained the importance of time management and
-                  quality control.</li>
-               <li> • Always keeping a high level of standard in terms of hygiene and food preparations</li>
-               <li> • Listen to and accommodate to clients specific dietary requirements and allergies to a safe
-                  and
-                  hygienic standard</li>
-
-            </ul>
-
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
-         </div>
+  <div class="modal-dialog modal-lg justify-content-sm-center modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="culinary-title" id="culinary-title">Culinary experience</h5>
+        <button type="button" class="btn.close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-   </div>
+      <div class="modal-body text-center">
+        <img src="/assets/images/modal3.png" style="height: 330px; width: 330px;" alt="culinary-modal">
+        <h4>Chef Sept 2016 – July 2017</h4>
+        <h5>Ernest Bevin Restaurant Beechcroft Rd, Tooting, London SW17
+          7DF</h5>
+
+        <i> Growing up i became entruiged by cooking from my family and during my secondary school days i had
+          the
+          oppertunity to work with a bunch of fellow culinary enthusiasts in my year group and with the
+          steady
+          guidence of our vice principal at the time formed a cooking club/resturant which would server
+          dinner
+          to teachers who would be staying late, once a week we would prepare a different three course meal
+          accordingly to the appropriate seasons and
+          all proceeds went back into the resturant to fund for the next weeks dinner course, throughout the
+          year the resturant worked well and i was learning new techniques and dishes every week and during
+          the
+          experiance we had the oppertunity to cook a buffet for over 100 people and whilst it was a long
+          hard
+          days of work some of the skills i used to overcome this was:</i>
+        <ul class="class list-unstyled">
+          <li>• Check the quality of the product and make sure that it meets the standards for consumer use
+          </li>
+          <li>• Determine how food should be presented and arranging decorative food displays</li>
+          <li>• Communication with fellow peers and the importance of time management, gaining a great
+            deal of discipline being a trainee chef</li>
+          <li>• Part of the catering team at an event which the Mayor of London Sadiq Khan attended and
+            tried all the dishes our team prepared</li>
+        </ul>
+
+
+        <h4>Kitchen assistant Feb 2020 – June 2020</h4>
+        <h5>TGI Fridays</h5>
+
+
+        <i>in the heart of the pandemic whilst studying i started employment as a kitchen assistant(line
+          chef)
+          at TGI Fridays Wembley. it was a short employment however i ganined vital experiance with
+          running a
+          station, the time managment and repetitive consistency that i was subjected to made me a more
+          efficient and analytical thinker. alongside making good memories with the other people working
+          there i learnt many important skills that helped develop me into a more confident and assertive
+          person, i had taken the skills i learnt in the kitchen and applied them to my life. this helped
+          me
+          realize the strong points and weaknesses and improve on them. i recieved valuable knowledge and
+          insights to the workings of a professional kitchen to the industry health standards such as:</i>
+        <ul class="list-unstyled">
+          <li>• Check the quality of the product and make sure that it meets the standards for consumer use
+          </li>
+          <li>• Determine how food should be presented and decorative food displays</li>
+          <li> • Communication with fellow peers and gained the importance of time management and
+            quality control.</li>
+          <li> • Always keeping a high level of standard in terms of hygiene and food preparations</li>
+          <li> • Listen to and accommodate to clients specific dietary requirements and allergies to a safe
+            and
+            hygienic standard</li>
+
+        </ul>
+
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="modal fade" id="qualification-modal" tabindex="-1" aria-labelledby="qualification-modal" aria-hidden="true">
-   <div class="modal-dialog modal-lg justify-content-sm-center modal-dialog-scrollable">
-      <div class="modal-content">
-         <div class="modal-header">
-            <h5 class="qualification-title" id="qualification-title">Qualifications</h5>
-            <button type="button" class="btn.close" data-bs-dismiss="modal" aria-label="Close"></button>
-         </div>
-         <div class="modal-body text-center">
-            <img src="/assets/images/modal4.png" style="height: 330px; width: 330px;" alt="qualification-modal">
-            <h2>GCSE qualifications August 2017 </h2>
-            <ul class="list-unstyled">
-               <li><i>Mathematics grade</i> 6</li>
-
-               <li><i>English Language grade</i> 6</li>
-
-               <li><i>English Literature grade</i> 5</li>
-
-               <li><i>Business Studies grade</i> C</li>
-
-               <li><i>Core Science grade</i> C</li>
-
-               <li><i>Additional Science grade </i>C</li>
-
-               <li><i>Media Studies grade</i> C</li>
-
-               <li><i>NCFE Level 2 Certificate in Creative Studies</i> Pass</li>
-
-               <li><i>BCS Level 2 ECDL Certificate in IT Application</i> Merit</li>
-            </ul>
-            <h2>A level qualifications Sept 2017-July 2019 </h2>
-            <ul class="list-unstyled">
-               <li><i>BTEC Level 3 Extended Diploma in ICT grade</i> PPP</li>
-
-            </ul>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
-         </div>
+  <div class="modal-dialog modal-lg justify-content-sm-center modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="qualification-title" id="qualification-title">Qualifications</h5>
+        <button type="button" class="btn.close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-   </div>
+      <div class="modal-body text-center">
+        <img src="/assets/images/modal4.png" style="height: 330px; width: 330px;" alt="qualification-modal">
+        <h2>GCSE qualifications August 2017 </h2>
+        <ul class="list-unstyled">
+          <li><i>Mathematics grade</i> 6</li>
+
+          <li><i>English Language grade</i> 6</li>
+
+          <li><i>English Literature grade</i> 5</li>
+
+          <li><i>Business Studies grade</i> C</li>
+
+          <li><i>Core Science grade</i> C</li>
+
+          <li><i>Additional Science grade </i>C</li>
+
+          <li><i>Media Studies grade</i> C</li>
+
+          <li><i>NCFE Level 2 Certificate in Creative Studies</i> Pass</li>
+
+          <li><i>BCS Level 2 ECDL Certificate in IT Application</i> Merit</li>
+        </ul>
+        <h2>A level qualifications Sept 2017-July 2019 </h2>
+        <ul class="list-unstyled">
+          <li><i>BTEC Level 3 Extended Diploma in ICT grade</i> PPP</li>
+
+        </ul>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="modal fade" id="extra-curicular-modal" tabindex="-1" aria-labelledby="extra-curicular-modal"
-   aria-hidden="true">
-   <div class="modal-dialog modal-lg justify-content-sm-center modal-dialog-scrollable">
-      <div class="modal-content">
-         <div class="modal-header">
-            <h5 class="extra-title" id="extra-title">Extra Curiculars</h5>
-            <button type="button" class="btn.close" data-bs-dismiss="modal" aria-label="Close"></button>
-         </div>
-         <div class="modal-body text-center">
-            <img src="/assets/images/modal5.png" style="height: 330px; width: 330px;" alt="extra_curicular-modal">
-
-            <h4>Library Volunteer Aug 2017 – Sept 2017
-            </h4>
-            <h5>Pollards Hill Library S Lodge Ave, Mitcham CR4 1LT</h5>
-
-
-            <i> As part of NCS the challenge i voluntered at a local library to help inspire and bring awareness
-               to the decline of kids who read books as everything is digital, it affects the amount of people who
-               use/read physical books. This programme encouraged and rewarded kids for the amount of books they
-               read.my voluntering was to be able to comunicate and work with the kids who would read the book
-               they were currently reading. i would be asking questions to make sure they understood
-               what they are reading and giving them their star which they collect. i took part in this
-               voluntering specificaly because i loved reading books myself growing up and understand the benifit
-               it has, so helping to inspire the younger generation rediscover the adventure and imagination of
-               reading was a no brainer. whilst i was not helping kids i was helping around the library and learnt
-               how the books checking system worked to help visitors of the library out with any book returning
-               queries which
-               lead me to learning more about the computer systems they implemented to help with queries of
-               visitors in the computer section.This expanded my knowledge in many ways as i had learnt important
-               communication skills such as listening attentivley, communicating in a calm and friendly manner to
-               build rapport with the child and parent. </i>
-            <p>Skills implemented</p>
-            <ul class="list-unstyled">
-
-               <li>• Organise and rearrange books</li>
-               <li>• Work with office machines to help customers in the library</li>
-               <li>• Help troubleshooting with computers</li>
-               <li>• Carrying out activities with children to encourage books, reading and creative thinking
-               </li>
-            </ul>
-
-
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
-         </div>
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg justify-content-sm-center modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="extra-title" id="extra-title">Extra Curiculars</h5>
+        <button type="button" class="btn.close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-   </div>
+      <div class="modal-body text-center">
+        <img src="/assets/images/modal5.png" style="height: 330px; width: 330px;" alt="extra_curicular-modal">
+
+        <h4>Library Volunteer Aug 2017 – Sept 2017
+        </h4>
+        <h5>Pollards Hill Library S Lodge Ave, Mitcham CR4 1LT</h5>
+
+
+        <i> As part of NCS the challenge i voluntered at a local library to help inspire and bring awareness
+          to the decline of kids who read books as everything is digital, it affects the amount of people who
+          use/read physical books. This programme encouraged and rewarded kids for the amount of books they
+          read.my voluntering was to be able to comunicate and work with the kids who would read the book
+          they were currently reading. i would be asking questions to make sure they understood
+          what they are reading and giving them their star which they collect. i took part in this
+          voluntering specificaly because i loved reading books myself growing up and understand the benifit
+          it has, so helping to inspire the younger generation rediscover the adventure and imagination of
+          reading was a no brainer. whilst i was not helping kids i was helping around the library and learnt
+          how the books checking system worked to help visitors of the library out with any book returning
+          queries which
+          lead me to learning more about the computer systems they implemented to help with queries of
+          visitors in the computer section.This expanded my knowledge in many ways as i had learnt important
+          communication skills such as listening attentivley, communicating in a calm and friendly manner to
+          build rapport with the child and parent. </i>
+        <p>Skills implemented</p>
+        <ul class="list-unstyled">
+
+          <li>• Organise and rearrange books</li>
+          <li>• Work with office machines to help customers in the library</li>
+          <li>• Help troubleshooting with computers</li>
+          <li>• Carrying out activities with children to encourage books, reading and creative thinking
+          </li>
+        </ul>
+
+
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="modal fade" id="building-modal" tabindex="-1" aria-labelledby="building-modal" aria-hidden="true">
-   <div class="modal-dialog modal-lg justify-content-sm-center modal-dialog-scrollable">
-      <div class="modal-content">
-         <div class="modal-header">
-            <h5 class="building-title" id="building-title">Construction ¦ Painting/Design</h5>
-            <button type="button" class="btn.close" data-bs-dismiss="modal" aria-label="Close"></button>
-         </div>
-         <div class="modal-body text-center">
-            <img src="/assets/images/modal6.png" style="height: 330px; width: 330px;" alt="building-modal">
-            <p>
-               <i>over the years i had gained hands on experiance in the painting and decorating/building work and
-                  through some mutual connections i was able to secure a spot as a painter decorator and cleanup
-                  crew.
-                  it was something i not only enjoyed but grew quite fond of as it was a way to focus my creative
-                  talents and hone them through hard physical labour. i was fortunate during this time to learn alot
-                  of
-                  useful things such as:
-                  how to use and opertae a jackhammer
-                  to pipe plumbing
-                  to take out and replaster walls and floor boards
-                  grout bathroom tiles
-                  the rigourous cleaning process when working in a residential apartment.
-                  removing and disposing of rubble
-                  dismantaling frames
-                  painting in tight spaces and effectively
-               </i>
-            </p>
-
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
-         </div>
+  <div class="modal-dialog modal-lg justify-content-sm-center modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="building-title" id="building-title">Construction ¦ Painting/Design</h5>
+        <button type="button" class="btn.close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-   </div>
+      <div class="modal-body text-center">
+        <img src="/assets/images/modal6.png" style="height: 330px; width: 330px;" alt="building-modal">
+        <p>
+          <i>over the years i had gained hands on experiance in the painting and decorating/building work and
+            through some mutual connections i was able to secure a spot as a painter decorator and cleanup
+            crew.
+            it was something i not only enjoyed but grew quite fond of as it was a way to focus my creative
+            talents and hone them through hard physical labour. i was fortunate during this time to learn alot
+            of
+            useful things such as:
+            how to use and opertae a jackhammer
+            to pipe plumbing
+            to take out and replaster walls and floor boards
+            grout bathroom tiles
+            the rigourous cleaning process when working in a residential apartment.
+            removing and disposing of rubble
+            dismantaling frames
+            painting in tight spaces and effectively
+          </i>
+        </p>
+
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 
-<!--/Modals-->
+<!--/Modals end-->
 
 
 
-</html>
+</html><!--html document end-->
