@@ -47,7 +47,7 @@ A elegent and opulence desined wesbsite which i hope to use and display as a alt
 - Another feature idea
 
 ## Testing 
-
+[lighthouse](https://github.com/adzz7867/AdnanBashir/blob/main/lighthouse-report.io-20230219)
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
@@ -60,10 +60,10 @@ If this section grows too long, you may want to split it off into a separate fil
 ### Validator Testing 
 
 - HTML
-  - During the validation of the HTML the [W3C validator],(https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html) i encountered a list of small but tedious errors which i had corrected and validated to almost no errors, the reason i wasnt able to solve all the validation errors is becuase of time restraints and lack of resource and knowledge. Attached below is a file of the code before and after validation.
+  - During the validation of the HTML the [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html) i encountered a list of small but tedious errors which i had corrected and validated to almost no errors, the reason i wasnt able to solve all the validation errors is becuase of time restraints and lack of resource and knowledge. Attached below is a file of the code before and after validation.
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
-- The [Results](https://github.com/adzz7867/AdnanBashir/blob/main/validated-code%20(2).odt)
+- The [Results](https://github.com/adzz7867/AdnanBashir/blob/main/validated-code.odt)
 ### Unfixed Bugs
 
 You will need to mention unfixed bugs and why they were not fixed.
