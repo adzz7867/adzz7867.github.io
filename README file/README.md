@@ -47,8 +47,9 @@ A elegent and opulence desined wesbsite which i hope to use and display as a alt
 - Another feature idea
 
 ## Testing 
-[lighthouse](https://github.com/adzz7867/AdnanBashir/blob/main/lighthouse-report.io-20230219)
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+[Lighthouse](https://github.com/adzz7867/AdnanBashir/blob/main/README%20file/lighthouse%20report.html)
+[reports](https://github.com/adzz7867/AdnanBashir/blob/main/README%20file/lighthouse%20report2.html)
+In this section highlight the navigation and structure performance and rigidity
 
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
